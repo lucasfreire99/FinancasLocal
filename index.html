@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finanças Privadas</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="app-container">
+    <aside>
+      <h1><span class="material-symbols-outlined">shield_with_heart</span> FinPrivé</h1>
+      <ul class="menu-nav">
+        <li><a class="menu-item active" data-view="dashboard"><span class="material-symbols-outlined">dashboard</span>Dashboard</a></li>
+        <li><a class="menu-item" data-view="receitas"><span class="material-symbols-outlined">arrow_upward</span>Receitas</a></li>
+        <li><a class="menu-item" data-view="despesas"><span class="material-symbols-outlined">arrow_downward</span>Despesas</a></li>
+        <li><a class="menu-item" data-view="backup"><span class="material-symbols-outlined">database</span>Backup</a></li>
+      </ul>
+    </aside>
+
+    <main id="app-view">
+      <!-- As visualizações modulares serão injetadas dinamicamente aqui -->
+    </main>
+  </div>
+
+  <div id="toast-container"></div>
+
+  <div id="modal-container" class="modal-overlay">
+    <div class="modal-content" id="modal-body"></div>
+  </div>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
